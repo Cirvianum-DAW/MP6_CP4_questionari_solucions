@@ -348,3 +348,26 @@ promise.then((value) => {
 - D) `fetch.post('https://api.example.com/data', JSON.stringify(data))`
 
 **Resposta correcta: A) `fetch('https://api.example.com/data', { method: 'POST', body: JSON.stringify(data) })`**
+
+Aquí tens la llista de respostes correctes per la UF4 basada en l'última versió:
+
+1. C
+2. A
+3. A
+4. B
+5. B
+6. A
+7. B
+8. A
+9. A
+10. D
+11. D
+12. D
+13. C
+14. B
+15. A
+16. C
+17. B
+18. A
+19. A
+20. A
