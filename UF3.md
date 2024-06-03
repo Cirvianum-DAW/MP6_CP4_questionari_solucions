@@ -83,19 +83,19 @@ document.body.appendChild(element);
 
 ### 7. Com es pot seleccionar tots els elements amb la classe "item" i canviar el seu color de text a vermell?
 
-```javascript
-const elements = document.querySelectorAll(".item");
-elements.forEach((element) => {
-  element.style.color = "red";
-});
-```
-
 - A) `document.querySelector('.item').style.color = 'red';`
 - B) `document.querySelectorAll('.item').style.color = 'red';`
 - C) `document.querySelectorAll('.item').forEach(element => { element.style.color = 'red'; });`
 - D) `document.querySelector('.item').forEach(element => { element.style.color = 'red'; });`
 
 **Resposta correcta: C) `document.querySelectorAll('.item').forEach(element => { element.style.color = 'red'; });` Si fem querySelectorAll('.item').style no funcionarà perquè querySelectorAll retorna una llista de nodes, no un node únic. Per tant, hem de recórrer tots els elements de la llista i canviar el color de text de cadascun.**
+
+```javascript
+const elements = document.querySelectorAll(".item");
+elements.forEach((element) => {
+  element.style.color = "red";
+});
+```
 
 ### 8. Quin és el resultat de la següent manipulació del DOM?
 
@@ -150,7 +150,7 @@ container.removeChild(paragrafs[0]);
 - C) Elimina tots els paràgrafs dins del div amb id "container".
 - D) No fa res, perquè `paragrafs` és una col·lecció buida.
 
-**Resposta correcta: B) Elimina el primer paràgraf dins del div amb id "container".**
+**Resposta correcta: B) Elimina <p> Paràgraf 1 </p>**
 
 ### 11. Quin esdeveniment es dispara quan el cursor del ratolí entra dins d'un element?
 
@@ -190,9 +190,7 @@ document
 </form>
 ```
 
-- A) `form
-
-.onsubmit = function(event) { alert('Formulari enviat!'); }`
+- A) `form.onsubmit = function(event) { alert('Formulari enviat!'); }`
 
 - B) `form.addEventListener('submit', function(event) { alert('Formulari enviat!'); });`
 - C) `form.addEventListener('submit', function(event) { event.preventDefault(); alert('Formulari enviat!'); });`
@@ -244,7 +242,7 @@ document
 ```
 
 - A) Es mostra una alerta amb el text "Nova selecció: " seguit del valor de l'opció seleccionada.
-- B) Es mostra una alerta amb el text "Nova selecció: 1" o "Nova selecció: 2".
+- B) Es mostra una alerta amb el text "Nova selecció: Opció 1" o "Nova selecció: Opció 2".
 - C) Es mostra una alerta amb el text "Opció seleccionada: " seguit del valor de l'opció seleccionada.
 - D) Es mostra una alerta amb el text "Opció seleccionada: Opció 1" o "Opció seleccionada: Opció 2".
 
@@ -344,9 +342,7 @@ element.hidden = true;
 - A) Les classes CSS permeten afegir estils dinàmics mentre que l'atribut `style` no.
 - B) Utilitzar classes CSS fa que el codi sigui més net, més fàcil de mantenir i permet reutilitzar els estils.
 - C) L'atribut `style` només es pot utilitzar per a canvis de color, mentre que les classes CSS es poden utilitzar per a qualsevol estil.
-- D) No hi ha cap avantatge, és millor util
-
-itzar sempre l'atribut `style`.
+- D) No hi ha cap avantatge, és millor utilitzar sempre l'atribut `style`.
 
 **Resposta correcta: B) Utilitzar classes CSS fa que el codi sigui més net, més fàcil de mantenir i permet reutilitzar els estils.**
 
